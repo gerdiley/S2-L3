@@ -404,55 +404,32 @@ footer a {
     }
 }
 
-@media screen and (min-width:500px) {
-    header div {
-        display: flex;
-        justify-content: space-between;
-    }
+#correlati{
+    background: none;
+    display:flex;
+    border: 0;
 
-    aside {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    aside h2 {
-        display: block;
-        width: 100%;
-    }
-
-    aside div {
-        width: 30%;
-        justify-content: space-evenly;
-    }
 }
 
-@media screen and (min-width:800px) {
-
-    main {
-        display: flex;
-        align-items: flex-start;
-     }
-
-    aside div {
+@media screen and (min-width:500px) {
+    #correlati{
         width: 100%;
+        justify-content: space-between;
+    }
+    
+    #correlati div {
+        width: 30%;
+    }   
+}
+
+@media screen and (min-width:800px){
+    main{display: flex;
+    }
+    #correlati{
         flex-direction: column-reverse;
     }
-
-    aside h2 {
-        display: block;
-    }
-    
-    #postQuattro {
-        order: 1;
+    #correlati div{
+        width: 30vh;
     }
 
-    #postTre {
-        order: 2;
-    }
-
-    #postDue {
-        order: 3;
-    }
-    
 }
